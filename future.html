@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future Development — Roberto Burciaga</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+  <script src="swipe.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html">roberto<span>.burciaga</span></a>
+      <nav class="tabs" aria-label="Main">
+        <a href="projects.html">Projects</a>
+        <a href="future.html" class="active" aria-current="page">Future Development</a>
+        <a href="cad.html">CAD Work</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour mode">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow reveal" style="--step:0">Future development</p>
+        <h2 class="reveal" style="--step:0">What I'm building now</h2>
+        <p class="sub reveal" style="--step:1">Two connected efforts, both running on my own server network: a network of AI agents, and the open-weight language models that power them.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" style="--step:2">
+      <div class="wrap">
+        <div class="grid two">
+          <article class="card">
+            <span class="status">In development</span>
+            <h3>Agent Network</h3>
+            <p>A network of AI agents that hand work to each other. Each agent has its own role, and a coordinating layer routes tasks to whichever one is suited for the job.</p>
+            <ul>
+              <li>Agents that split up and pass along multi-step tasks</li>
+              <li>Built to automate work end to end, not only answer questions</li>
+              <li>Runs against my own models, so nothing depends on an outside API</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">AI agents</span><span class="tag">Automation</span><span class="tag">Backend</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="status">In development</span>
+            <h3>Self-Hosted Open-Weight LLMs</h3>
+            <p>Hosting open-weight language models on my current server network, so the agents have local models to call and I control the whole stack.</p>
+            <ul>
+              <li>Open-weight models served across my own machines</li>
+              <li>Full control over data, cost, and which model handles which job</li>
+              <li>The inference layer the Agent Network is built on</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">LLM hosting</span><span class="tag">Servers</span><span class="tag">Infrastructure</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" style="--step:3">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it fits together</p>
+          <h2>Agents on top, models underneath</h2>
+        </div>
+        <div class="diagram">
+          <svg viewBox="0 0 720 300" width="720" role="img" aria-label="Diagram: tasks enter a coordinator, which routes them to agents, which call open-weight LLMs hosted on the server network.">
+            <g fill="none" stroke="#A3AFAC" stroke-width="1.5">
+              <path d="M130 150 H190"/>
+              <path d="M330 150 C370 150 370 70 410 70"/>
+              <path d="M330 150 H410"/>
+              <path d="M330 150 C370 150 370 230 410 230"/>
+              <path d="M530 70 C560 70 560 150 590 150"/>
+              <path d="M530 150 H590"/>
+              <path d="M530 230 C560 230 560 150 590 150"/>
+            </g>
+            <g font-family="Consolas, 'Cascadia Code', monospace" font-size="14" text-anchor="middle">
+              <rect x="20" y="125" width="110" height="50" rx="8" fill="none" stroke="#A3AFAC" stroke-width="1.5"/>
+              <text x="75" y="155" fill="#EEEBE1">Task</text>
+
+              <rect x="190" y="120" width="140" height="60" rx="8" fill="#A3AFAC"/>
+              <text x="260" y="155" fill="#44483D" font-weight="700">Coordinator</text>
+
+              <rect x="410" y="48" width="120" height="44" rx="8" fill="none" stroke="#EEEBE1" stroke-width="1.5"/>
+              <text x="470" y="75" fill="#EEEBE1">Agent</text>
+              <rect x="410" y="128" width="120" height="44" rx="8" fill="none" stroke="#EEEBE1" stroke-width="1.5"/>
+              <text x="470" y="155" fill="#EEEBE1">Agent</text>
+              <rect x="410" y="208" width="120" height="44" rx="8" fill="none" stroke="#EEEBE1" stroke-width="1.5"/>
+              <text x="470" y="235" fill="#EEEBE1">Agent</text>
+
+              <rect x="590" y="105" width="115" height="90" rx="8" fill="#EEEBE1"/>
+              <text x="647" y="145" fill="#44483D" font-weight="700">Open-weight</text>
+              <text x="647" y="165" fill="#44483D" font-weight="700">LLMs</text>
+
+              <text x="647" y="222" fill="#A3AFAC" font-size="12">my server network</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Roberto Burciaga</span>
+      <a href="https://github.com/RBurcia">github.com/RBurcia</a>
+    </div>
+  </footer>
+</body>
+</html>

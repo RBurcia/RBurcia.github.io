@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Roberto Burciaga</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+  <script src="swipe.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html">roberto<span>.burciaga</span></a>
+      <nav class="tabs" aria-label="Main">
+        <a href="projects.html" class="active" aria-current="page">Projects</a>
+        <a href="future.html">Future Development</a>
+        <a href="cad.html">CAD Work</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour mode">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow reveal" style="--step:0">Projects</p>
+        <h2 class="reveal" style="--step:0">Projects I have worked on</h2>
+        <p class="sub reveal" style="--step:1">Lab automation, machine learning, and systems programming, built in research labs, on teams, and on my own.</p>
+      </div>
+    </section>
+
+    <section class="section reveal" style="--step:2">
+      <div class="wrap">
+        <div class="grid two">
+
+          <article class="card">
+            <span class="meta">Research lab · Automation</span>
+            <h3>Automated Tensile Tester</h3>
+            <p>Control and analysis software for a tensile testing rig. The app drives the stepper motor through load cycles, captures camera frames of the sample, and measures deformation from the images.</p>
+            <ul>
+              <li>Camera-based image processing to track sample width and strain</li>
+              <li>Stress–strain and force–strain graphs with a Young's modulus calculation</li>
+              <li>Desktop UI with test caching and Excel export</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Image processing</span><span class="tag">Stepper control</span><span class="tag">Data analysis</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="meta">Team project · AI</span>
+            <h3>PokerBot</h3>
+            <p>A poker-playing bot with a full game backend. It deals and evaluates hands, logs every hand played, and uses a trained model to predict win rate before deciding how to act.</p>
+            <ul>
+              <li>Hand evaluator and bot decision engine</li>
+              <li>Data logger feeding a win-rate prediction model</li>
+              <li>React front end for playing against the bot</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Machine learning</span><span class="tag">Backend</span><span class="tag">React</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="meta">Computer architecture</span>
+            <h3>Custom Assembly Languages</h3>
+            <p>Designed my own assembly languages on MARS-LE, a research fork of the MARS MIPS simulator that lets you define custom instruction sets, then wrote programs in them.</p>
+            <ul>
+              <li>Themed instruction sets including Mario Kart, McDonald's, and MIPS++</li>
+              <li>Each instruction implemented in Java against the simulator's register and memory model</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Java</span><span class="tag">MIPS</span><span class="tag">Language design</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="meta">Systems</span>
+            <h3>Assembler, Disassembler &amp; Toy Compiler</h3>
+            <p>A MIPS assembler that turns assembly into machine code, a disassembler that goes back the other way, and a small compiler that translates a high-level toy language into MIPS.</p>
+            <ul>
+              <li>Instruction encoding and decoding by hand</li>
+              <li>Compiler emits data sections, labels, and arithmetic for programs like FizzBuzz</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">MIPS</span><span class="tag">Compilers</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="meta">Desktop app</span>
+            <h3>Employee Time Tracker</h3>
+            <p>A desktop application for clocking employees in and out, tracking total hours worked, and managing weekly shift schedules.</p>
+            <div class="tags">
+              <span class="tag">Java</span><span class="tag">Swing</span><span class="tag">OOP</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="meta">Smaller builds</span>
+            <h3>Algorithms &amp; Simulations</h3>
+            <ul>
+              <li>RSA encryption and classical ciphers in Java</li>
+              <li>Median filter for removing noise from images</li>
+              <li>Falling-sand particle simulation</li>
+              <li>Min-heap, hash map, and queue implementations in C++ and Java</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Java</span><span class="tag">C++</span><span class="tag">Data structures</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Roberto Burciaga</span>
+      <a href="https://github.com/RBurcia">github.com/RBurcia</a>
+    </div>
+  </footer>
+</body>
+</html>
